@@ -1,0 +1,23 @@
+body {
+    background-color: #c5eeec;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted ;
+    border-width: thin;
+    border-color: #bfe2ee;
+}
+
+h1 {
+    color: #1114af;
+
+}
+
+h3 {
+    color: #000000;
+}
+
+button {
+    background-color: #e7e3ee;
+}
