@@ -4,42 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📱 E-Commerce</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     
-</head>
-<body>
-    <h1>E-Commerce FMU</h1>
-    <button type="button"><a href="contatos.html">Entre em contato</a></button>
-    <h3>Modelos disponíveis:</h3>
-    <p>
-        <ul>
-            <li><a href="https://l1nk.dev/AfuEX">Apple Iphone 14</a> 
-            <br>
-            <img src="fotos/Iphone14.jpg" alt="Iphone14" width="150"><a></a>
-            </li>
-            <li><a href="https://acesse.one/siz7V">Samsung Galaxy S23 Ultra</a>
-            <br>
-            <img src="fotos/SamsungGalaxy_s23.jpg" alt="SamsungGalaxy_s23" width="150">
-            </li>
-            <li><a href="https://acesse.one/bB5Tj">Xiaomi Redmi 12</a>
-            <br>
-            <img src="fotos/Xiaomi_Redmi12.jpg" alt="Xiaomi_Redmi12" width="150">
-            </li>
-        </ul>
-
-    </p><br>
     
-    <h3>Cadastro de novos clientes</h3>
-    <form action="">
-        <label>Nome:</label>
-        <input type="text" name="nomeCliente">
-        <br>
-        <label>Email:</label>
-        <input type="email" name="emailCliente">
-        <br>
-        <input type="submit">
-    </form>
+    
+</head>
 
+    <header class="bg-lightblue py-2">
+        <h1 class="text-center"><a class="nav-link" href="site.html">E-Commerce FMU</a></h1>
+        
+      </header>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-lightblue">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="site.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="modelos.html">Modelos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contatos.html">Contato</a>
+            </li>
+            <!-- Adicionar mais itens de menu conforme necessário -->
+          </ul>
+        </div>
+      </nav>
+
+    <!--Modais-->
+    <!-- Botão para acionar modal -->
+    <div class="text-center">
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+            Sobre nós!
+        </button>
+    </div>
+    
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Página web criada por:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            Beatriz<br>
+            Lucas<br>
+            Pedro<br>
+            Vinicius<br>
+            Vitor Vouvouloudas de Moraes<br>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="text-center">
+        <img src="fotos/varios celulares.png" alt="smartphones">
+    </div>
+   
+    <h4 class="text-center">Aqui você encontra diversas marcas e modelos de smartphones com o melhor preço do mercado!</h4>
+
+
+   
+    
+    <footer class="bg-lightblue py-4">
+        <p class="text-center">© 2023 E-Commerce FMU</p>
+      </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 

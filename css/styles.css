@@ -15,9 +15,13 @@ h1 {
 }
 
 h3 {
-    color: #000000;
+    color: #1114af;
+}
+
+h4 {
+    color: #5daf11;
 }
 
 button {
-    background-color: #e7e3ee;
+    background-color: #ece6f7;
 }

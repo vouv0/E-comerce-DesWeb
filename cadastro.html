@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📱 Contatos</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
+    <title>📱 Cadastro de novos clientes</title>
 </head>
 <body>
     <header class="bg-lightblue py-2">
         <h1 class="text-center"><a class="nav-link" href="site.html">E-Commerce FMU</a></h1>
-        <h3 class="text-center">Contato</h3>
+        <h3 class="text-center">Cadastro de Clientes</h3>
       </header>
-
+      
       <nav class="navbar navbar-expand-lg navbar-light bg-lightblue">
         <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,52 +36,58 @@
           </ul>
         </div>
       </nav>
-    
-
-    <br>
-
-    <section class="container my-4">
-        
+      
+      <section class="container my-4">
+        <form>
           <div class="form-row">
             <div class="form-group col-md-6">
-                
-                <label for="inputNome">Nome</label>
-                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+              <label for="inputNome">Nome</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome">
             </div>
             <div class="form-group col-md-6">
-                <label for="inputSobrenome">Sobrenome</label>
-                <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+              <label for="inputSobrenome">Sobrenome</label>
+              <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
             </div>
           </div>
           <div class="form-group">
-            
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email"><br>
-            <label>Sua Mensagem:</label><br>
-            <textarea name="suaMensagem" id="suaMensagem" cols="50" rows="10"></textarea><br>
-            <form action="mailto:e_commercefmu@gmail.com" method="post" enctype="text/plain"></form>
-            <input type="submit">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
           </div>
-    </section>
-
-    <!--card-->
-    <div class="card"  style="width: 20rem;">
-        <div class="card-body"> 
-          <h5 class="card-title" id="card1">Entre em contato</h5>
-          <p class="card-text">Email: e_commercefmu@gmail.com</p>
-          <p class="card-text">Tel: (11) 9xxxx-xxxx</p>
-        </div>
-    </div>
-    <!--Quero por o card do lado direito-->
-    
-
-    <footer class="bg-lightblue py-4">
+          <div class="form-group">
+            <label for="inputEndereco">Endereço</label>
+            <input type="text" class="form-control" id="inputEndereco" placeholder="Rua Principal, 1234">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCidade">Cidade</label>
+              <input type="text" class="form-control" id="inputCidade">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputEstado">Estado</label>
+              <select id="inputEstado" class="form-control">
+                <option selected>Escolher...</option>
+                <option value="MG">MG</option>
+                <option value="RJ">RJ</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputCEP">CEP</label>
+              <input type="text" class="form-control" id="inputCEP">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+      </section>
+      
+      <footer class="bg-lightblue py-4">
         <p class="text-center">© 2023 E-Commerce FMU</p>
-    </footer>
-
+      </footer>
+      
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    
 </body>
 </html>
