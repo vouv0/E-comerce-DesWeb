@@ -8,35 +8,29 @@
     <title>📱 Cadastro de novos clientes</title>
 </head>
 <body>
-    <header class="bg-lightblue py-2">
-        <h1 class="text-center"><a class="nav-link" href="index.html">E-Commerce FMU</a></h1>
-        <h3 class="text-center">Cadastro de Clientes</h3>
-      </header>
-      
-      <nav class="navbar navbar-expand-lg navbar-light bg-lightblue">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="modelos.html">Modelos</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="cadastro.html">Cadastro</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="contatos.html">Contato</a>
-            </li>
-            <!-- Adicionar mais itens de menu conforme necessário -->
-          </ul>
-        </div>
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src='fotos/logo_provisorio.png' alt="Logo da empresa"></img>
+    <!--Colocar barra de pesquisa-->
+    <section>
+      <nav class="cabecalho-cliente">
+        <a class="cabecalho-menu-cliente" href="cadastro.html">Cadastro</a>
+        <a class="cabecalho-menu-cliente" href="#">Carrinho</a>
       </nav>
-      
+    </section>
+    
+  </header>
+
+
+    <main>
+      <section class="cabecalho-menu">
+        <nav class="menu">
+          <a class="menu-item" href="index.html">Home</a>
+          <a class="menu-item" href="modelos.html">Modelos</a>
+          <a class="menu-item" href="contatos.html">Contato</a>
+          <!-- Adicionar mais itens de menu conforme necessário -->
+        </nav>
+      </section>
+
       <section class="container my-4">
         <form>
           <div class="form-row">
@@ -80,10 +74,13 @@
           <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
       </section>
+
+    </main>
       
-      <footer class="bg-lightblue py-4">
-        <p class="text-center">© 2023 E-Commerce FMU</p>
-      </footer>
+
+    <footer class="bg-lightblue py-4">
+      <p class="text-center">© 2023 E-Commerce FMU</p>
+    </footer>
       
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

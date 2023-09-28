@@ -7,49 +7,49 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     
-    
-    
 </head>
-
-    <header class="bg-lightblue py-2">
-        <h1 class="text-center"><a class="nav-link" href="index.html">E-Commerce FMU</a></h1>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src='fotos/logo_provisorio.png' alt="Logo da empresa"></img>
+        <!--Colocar barra de pesquisa-->
+        <section>
+          <nav class="cabecalho-cliente">
+            <a class="cabecalho-menu-cliente" href="cadastro.html">Cadastro</a>
+            <a class="cabecalho-menu-cliente" href="#">Carrinho</a>
+          </nav>
+        </section>
         
-      </header>
+    </header>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-lightblue">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="modelos.html">Modelos</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="cadastro.html">Cadastro</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="contatos.html">Contato</a>
-            </li>
-            <!-- Adicionar mais itens de menu conforme necessário -->
-          </ul>
-        </div>
-      </nav>
+
+    <main>
+      <section class="cabecalho-menu">
+        <nav class="menu">
+          <a class="menu-item" href="index.html">Home</a>
+          <a class="menu-item" href="modelos.html">Modelos</a>
+          <a class="menu-item" href="contatos.html">Contato</a>
+          <!-- Adicionar mais itens de menu conforme necessário -->
+        </nav>
+      </section>
+
+      <div class="banner">
+        <img class="imagem-banner" src="fotos/varios celulares.png" alt="smartphones">
+        <h4 class="texto-banner">Destaques de smartphones com o melhor preço!</h4>
+      </div>
+      
+
+<!--Colocar menu latera de filtragem de produtos-->
+<!--Colocar os produtos em containers de 3x3-->
 
     <!--Modais-->
     <!-- Botão para acionar modal -->
     <div class="text-center">
-        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-            Sobre nós!
-        </button>
+      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+        Sobre nós!
+      </button>
     </div>
-    
-  
-    <!-- Modal -->
+
+  <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -60,12 +60,7 @@
             </button>
             </div>
             <div class="modal-body">
-            Beatriz<br>
-            Lucas<br>
-            Pedro<br>
-            Vinicius<br>
-            Vitor Vouvouloudas de Moraes<br>
-
+            Beatriz<br>Lucas<br>Pedro<br>Vinicius<br>Vitor Vouvouloudas de Moraes<br>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -74,25 +69,19 @@
         </div>
         </div>
     </div>
+    </main>
 
-    <br>
-    <div class="text-center">
-        <img src="fotos/varios celulares.png" alt="smartphones">
-    </div>
-   
-    <h4 class="text-center">Aqui você encontra diversas marcas e modelos de smartphones com o melhor preço do mercado!</h4>
-
-
-   
     
-    <footer class="bg-lightblue py-4">
+    
+    <footer class="rodape">
         <p class="text-center">© 2023 E-Commerce FMU</p>
-      </footer>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 

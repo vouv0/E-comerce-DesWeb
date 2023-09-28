@@ -1,27 +1,97 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap');
+
+
+/*Comandos para "resetar" o estilo d apagina*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Comandos para estilizar a página*/
+
 body {
-    background-color: #c5eeec;
+    background: linear-gradient(55.87deg, #000331 5.8%, #6a6a6b 35%)
 }
 
-hr {
-    border-style: none;
-    border-top-style: dotted ;
-    border-width: thin;
-    border-color: #bfe2ee;
+
+.cabecalho{
+    background: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cabecalho-imagem{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    margin-left: 25px;
+    padding: 15px;
 }
 
-h1 {
-    color: #1114af;
-
+.cabecalho-cliente{
+    display: flex;
+    gap: 100px;
+    margin-right: 40px;
 }
 
-h3 {
-    color: #1114af;
+.cabecalho-menu-cliente{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-weight:bold;
 }
 
-h4 {
-    color: #5daf11;
+.cabecalho-menu{
+    background: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
-button {
-    background-color: #ece6f7;
+.menu{
+    display: flex;
+    margin-left: 50px;
+    gap: 500px;
+    
 }
+
+.menu-item{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: 'Martian Mono', monospace;
+    font-weight:bold;
+    
+}
+
+.banner{
+    border-top: 0.4px solid #636363 ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 70px;
+    
+}
+
+.imagem-banner{
+    width: 70%;
+    display: flex;
+    align-self: center;
+}
+
+.texto-banner{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    
+}
+
+/*FIM DA PAGINA PRINCIPAL*/
+
