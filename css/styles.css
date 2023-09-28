@@ -99,6 +99,37 @@ body {
     font-size: small;
     
 }
+
+li, .cabecalho-menu-cliente, .navbar-brand {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+li::after,  .cabecalho-menu-cliente::after, .navbar-brand::after {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: grey;
+}
+
+li a:hover, .cabecalho-menu-cliente:hover, .navbar-brand:hover {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
 /*FIM DA PAGINA PRINCIPAL*/
 
 
