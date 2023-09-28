@@ -44,29 +44,36 @@ body {
     font-weight:bold;
 }
 
-.cabecalho-menu{
-    background: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-    
+
+.barra-menu{
+    background-color: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
 }
 
-.menu{
-    display: flex;
-    margin-left: 50px;
-    gap: 500px;
-    
-}
-
-.menu-item{
-    display: flex;
-    color: rgb(255, 255, 255);
+.navbar-brand{
+    color: rgb(253, 253, 255);
     font-family: 'Martian Mono', monospace;
-    font-weight:bold;
-    
+    font-size: bold;
+}
+
+.navbar-nav{
+    gap: 50px;
+}
+
+
+.nav-link{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: bold;
+}
+
+.navbar-toggler-icon{
+    background-color: #535353;
+}
+
+.btn{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: bold;
 }
 
 .banner{
@@ -92,6 +99,20 @@ body {
     font-size: small;
     
 }
-
 /*FIM DA PAGINA PRINCIPAL*/
+
+
+/*COMEÇO DA PAGINA DE MODELOS*/
+
+/*FIM DA PAGINA DE MODELOS*/
+
+
+/*COMEÇO DA PAGINA DE CONTATOS*/
+
+/*FIM DA PAGINA DE CONTATOS*/
+
+
+/*COMEÇO DA PAGINA DE CADASTROS*/
+
+/*FIM DA PAGINA DE CADASTROS*/
 
