@@ -4,6 +4,6 @@ Página de E-Commerce desenvolvida para projeto da matéria de Desenvolvimento d
 Grupo:
 - Beatriz
 - Lucas
-- Pedro
-- Vinicius
+- Pedro Carvalho
+- Vinicius Brito
 - Vitor Vouvouloudas de Moraes
