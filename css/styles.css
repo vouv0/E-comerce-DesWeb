@@ -4,8 +4,8 @@
 
 /*Comandos para "resetar" o estilo d apagina*/
 *{ 
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -13,12 +13,12 @@
 /*Comandos para estilizar a página*/
 
 body {
-    background: linear-gradient(55.87deg, #000331 5.8%, #6a6a6b 35%)
+    background-image: linear-gradient(to top, #0d1f74, #320e4d, #11082f, #200515, #000000);
 }
 
 
 .cabecalho{
-    background: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
+    
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -31,19 +31,6 @@ body {
     margin-left: 25px;
     padding: 15px;
 }
-
-.cabecalho-cliente{
-    display: flex;
-    gap: 100px;
-    margin-right: 40px;
-}
-
-.cabecalho-menu-cliente{
-    color: rgb(253, 253, 255);
-    font-family: 'Martian Mono', monospace;
-    font-weight:bold;
-}
-
 
 .barra-menu{
     background-color: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
@@ -70,6 +57,13 @@ body {
     background-color: #535353;
 }
 
+.barra-lateral{
+    display: flex;
+    align-items:start;
+    flex-direction: row;
+
+}
+
 .btn{
     color: rgb(253, 253, 255);
     font-family: 'Martian Mono', monospace;
@@ -78,17 +72,16 @@ body {
 
 .banner{
     border-top: 0.4px solid #636363 ;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 30px;
+    gap: 10px;
     margin-bottom: 70px;
     
 }
 
 .imagem-banner{
-    width: 70%;
+    width: 40%;   
     display: flex;
     align-self: center;
 }
@@ -131,6 +124,13 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
     transform-origin: left;
 }
 
+.rodape{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+}
+
+
 /*FIM DA PAGINA PRINCIPAL*/
 
 
@@ -147,4 +147,3 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
 /*COMEÇO DA PAGINA DE CADASTROS*/
 
 /*FIM DA PAGINA DE CADASTROS*/
-
