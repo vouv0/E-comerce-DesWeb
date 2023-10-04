@@ -136,6 +136,14 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
 
 /*COMEÇO DA PAGINA DE MODELOS*/
 
+#grade-modelos{
+    border-top: 0.4px solid #636363 ;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    
+}
+
 /*FIM DA PAGINA DE MODELOS*/
 
 
