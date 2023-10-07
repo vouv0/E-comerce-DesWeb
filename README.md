@@ -7,3 +7,5 @@ Grupo:
 - Pedro Carvalho
 - Vinicius Brito
 - Vitor Vouvouloudas de Moraes
+
+-Site is live at https://vouv0.github.io/E-comerce-DesWeb/
