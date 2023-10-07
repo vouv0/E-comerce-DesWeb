@@ -6,6 +6,7 @@
     <title>📱 Modelos</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    
 
 </head>
 <body>
@@ -73,12 +74,38 @@
             <img class="foto_celular" src="/fotos/Iphone13.jpg" alt="iphone13">
             <h6>Apple iPhone 13 (128 GB)</h6>
           </a>
+          <button id="infoButton" type="button" onclick="modal.showModal()">Info</button>
+          <dialog>
+            <h2><strong>Apple Iphone 13</strong> </h2>
+            <p>Preço: R$3.951,57</p>
+            <p>Cor: Meia-noite</p>
+            <p>Sistema operacional: iOS 14</p>
+            <p>Tecnologia celular: 5G</p>
+            <p>Câmera: Câmeras duplas de 12 MP com modo retrato</p>
+            <p>Espaço de armazenamento: 128GB</p>
+            <img src="/fotos/Iphone13.jpg" alt="ifone13" width="200px">
+            <br><button id="closeButton" type="button" onclick="modal.close()">Fechar</button>
+          </dialog>
+          
         </section>
         <section class="celulares">
           <a class="link-celular" href="https://www.amazon.com.br/dp/B00CLOZBHK/ref=fs_a_atv_4">
             <img class="foto_celular" src="/fotos/Iphone14.jpg" alt="iphone14">
             <h6>Apple iPhone 14 (128 GB)</h6>
           </a>
+          <!--Arrumar-->
+          <button id="infoButton" type="button" onclick="modal.showModal()">Info</button>
+          <dialog>
+            <h2><strong>Apple Iphone 14</strong> </h2>
+            <p>Preço: R$4.599,00</p>
+            <p>Cor: Cinza-Escuro</p>
+            <p>Sistema operacional: iOS</p>
+            <p>Tecnologia celular: 5G</p>
+            <p>Câmera: Câmeras duplas de 12 MP (Ultra Wide e Wide)</p>
+            <p>Espaço de armazenamento: 128GB</p>
+            <img src="/fotos/Iphone14.jpg" alt="ifone14" width="200px">
+            <br><button id="closeButton" type="button" onclick="modal.close()">Fechar</button>
+          </dialog>
         </section>
         <section class="celulares">
           <a class="link-celular" href="https://www.amazon.com.br/dp/B0CHXRDKQF/ref=fs_a_atv_3">
@@ -153,14 +180,16 @@
             </div>
         </div>
 
-
     <footer class="rodape">
         <p>© 2023 E-Commerce FMU</p>
     </footer>
 
+    <script src="/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    
     
 </body>
 </html>

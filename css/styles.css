@@ -236,6 +236,21 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
 }
 
 
+dialog{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    padding: 20px;
+    background-image: radial-gradient(circle, #759596, #5f7880, #4d5d67, #3d424d, #2b2a32);    width: 30%;
+    border-radius: 15px;
+    border: none;
+    text-align:justify;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
 
 /*FIM DA PAGINA DE MODELOS*/
 

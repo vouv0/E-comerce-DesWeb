@@ -8,42 +8,58 @@
 </head>
 <body>
     <main>
+      <button>Teste modal</button>
 
-      <section id="produtos-teste">
-        <section class="modelo">
-          <img id="apple" src="/fotos/logo_apple.svg" alt="apple">
-          <p>apple</p>
-        </section>
-        <section class="modelo">
-          <img id="samsung" src="/fotos/logo_samsung.svg" alt="samsung">
-          <p>samsung</p>
-        </section>
-        
-        
-      </section>
+      
 
-      <style>
-        #produtos-teste{
-          display: flex;
-          justify-content: space-evenly;
-          
-        }
-        #apple, #samsung{
-          width: 100px;
-        }
+      <dialog>
+        <h2>Apple Iphone 13</h2>
+        <p>Preço: R$3.951,57</p>
+        <p>Cor: Meia-noite</p>
+        <p>Sistema operacional: iOS 14</p>
+        <p>Tecnologia celular: 5G</p>
+        <p>Câmera: Câmeras duplas de 12 MP com modo retrato</p>
+        <p>Espaço de armazenamento: 128GB</p>
 
-        .modelo{
-          
-        }
-
-        .modelo p{
-          background-color: rgb(132, 132, 237);
-          color: antiquewhite;
-          padding: 5px 10px;
-        }
-      </style>
+        <section class="modelos">
+          <!--Apple-->
+          <section class="celulares">
+            <a class="link-celular" href="https://www.amazon.com.br/dp/B09T55NFSR/ref=fs_a_atv_5">
+              <img class="foto_celular" src="/fotos/Iphone13.jpg" alt="iphone13">
+              <h6>Apple iPhone 13 (128 GB)</h6>
+            </a>
+        <button>Fechar</button>
+      </dialog>
+    
 
     </main>
+
+    <style>
+      dialog::backdrop{
+        background-color: rgba(4, 4, 11, 0.494);
+      }
+
+      dialog{
+        background-color: rgb(136, 134, 134);
+        border: none;
+        border-radius: .5rem;
+        width: 30%;
+      }
+    </style>
+
+    <script>
+      const button = document.querySelector("button")
+      const modal = document.querySelector("dialog")
+      buttonClose = document.querySelector("dialog button")
+
+      button.onclick = function (){
+        modal.showModal()
+      }
+
+      buttonClose.onclick = function (){
+        modal.close()
+      }
+    </script>
 
 </body>
 </html>
