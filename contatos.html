@@ -49,40 +49,42 @@
     
   </header>
 
-    <main>
+    <main class="contato">
       <section class="container my-4">
-        
           <div class="form-row">
             <div class="form-group col-md-6">
-                
-                <label for="inputNome">Nome</label>
-                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+              <label for="inputNome">Nome</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome">
             </div>
             <div class="form-group col-md-6">
-                <label for="inputSobrenome">Sobrenome</label>
-                <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+              <label for="inputSobrenome">Sobrenome</label>
+              <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
             </div>
           </div>
           <div class="form-group">
-            
             <label for="inputEmail">Email</label>
             <input type="email" class="form-control" id="inputEmail" placeholder="Email"><br>
-            <label>Sua Mensagem:</label><br>
-            <textarea name="suaMensagem" id="suaMensagem" cols="50" rows="10"></textarea><br>
-            <form action="mailto:e_commercefmu@gmail.com" method="post" enctype="text/plain"></form>
-            <input type="submit">
           </div>
+          <div class="mensagem_contato">
+            <label>Sua Mensagem:</label>
+            <textarea name="suaMensagem" id="suaMensagem" cols="50" rows="5"></textarea>
+            <form action="mailto:e_commercefmu@gmail.com" method="post" enctype="text/plain"></form>
+            <input id="enviar" type="submit">
+            <!--card-->
+            <div class="card"  style="width: 20rem;">
+              <div class="card-body"> 
+                <h5 class="card-title" id="card1">Entre em contato</h5>
+                <p class="card-text">Email: e_commercefmu@gmail.com</p>
+                <p class="card-text">Tel: (11) 9xxxx-xxxx</p>
+              </div>
+            </div>
+          </div>
+            
       </section>
 
-      <!--card-->
+      
       <!--Quero por o card do lado direito-->
-      <div class="card"  style="width: 20rem;">
-        <div class="card-body"> 
-          <h5 class="card-title" id="card1">Entre em contato</h5>
-          <p class="card-text">Email: e_commercefmu@gmail.com</p>
-          <p class="card-text">Tel: (11) 9xxxx-xxxx</p>
-        </div>
-      </div>
+      
     
     </main>
       <!-- Modal -->

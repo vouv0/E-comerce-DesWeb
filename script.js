@@ -1,3 +1,4 @@
+//Botões de info dos modelos
 
 const button = document.querySelector("button")
 const modal = document.querySelector("#modal")
@@ -24,3 +25,5 @@ buttonClose.onclick = function (){
 buttonClose.onclick = function (){
   modal.close()
 }
+
+
