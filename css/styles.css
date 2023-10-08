@@ -18,7 +18,7 @@ body {
 
 
 .cabecalho{
-    
+    border-bottom: 0.2px solid white;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -34,6 +34,7 @@ body {
 
 .barra-menu{
     background-color: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
+    
 }
 
 .navbar-brand{
@@ -57,13 +58,6 @@ body {
     background-color: #535353;
 }
 
-.barra-lateral{
-    display: flex;
-    align-items:start;
-    flex-direction: row;
-
-}
-
 .btn{
     color: rgb(253, 253, 255);
     font-family: 'Martian Mono', monospace;
@@ -81,17 +75,49 @@ body {
 }
 
 .imagem-banner{
-    width: 40%;   
+    width: 30%;   
     display: flex;
     align-self: center;
 }
 
 .texto-banner{
+
     color: rgb(253, 253, 255);
     font-family: 'Martian Mono', monospace;
     font-size: small;
-    
 }
+
+
+
+#logos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:100px;
+    color: #ffffff;
+}
+
+.link-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.link-logo a{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+}
+
+#logo_apple, #logo_samsung, #logo_xiaomi{
+    width: 100px;
+    background-color: #e6e5ed86;
+    padding:10px;
+    border-radius: 20%;
+}
+
 
 li, .cabecalho-menu-cliente, .navbar-brand {
     position: relative;
@@ -125,23 +151,105 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
 }
 
 .rodape{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
     color: rgb(253, 253, 255);
     font-family: 'Martian Mono', monospace;
     font-size: small;
 }
-
-
 /*FIM DA PAGINA PRINCIPAL*/
+
 
 
 /*COMEÇO DA PAGINA DE MODELOS*/
 
-#grade-modelos{
-    border-top: 0.4px solid #636363 ;
+#pag-modelos{
     display: flex;
+    justify-items: center;
+    gap: 30%;
+
+
+}
+
+.modelos{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    gap: 50px 50px;
+
+}
+
+.celulares{
+    background-color: #320e4d;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 100px;
+    align-items: center;
+    max-width: 200px;
+}
+
+.link-celular{
+    padding-top: 30px;
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     
+
+}
+
+.foto_celular{
+    width: 90px;
+}
+
+#filtro-produtos{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.barra-lateral{
+    margin-left: 20px;
+    display: flex;
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+
+}
+
+.itens-barra{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+
+}
+
+
+dialog{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    padding: 20px;
+    background-image: radial-gradient(circle, #759596, #5f7880, #4d5d67, #3d424d, #2b2a32);    width: 30%;
+    border-radius: 15px;
+    border: none;
+    text-align:justify;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 /*FIM DA PAGINA DE MODELOS*/

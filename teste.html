@@ -3,77 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📱 E-Commerce</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>📱 E-Commerce pag Teste</title>
     
 </head>
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-lightblue">
-            <a class="navbar-brand" href="#">Menu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="modelos.html">Modelos</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="cadastro.html">Cadastro</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contatos.html">Contato</a>
-                </li>
-                <!-- Adicionar mais itens de menu conforme necessário -->
-              </ul>
-            </div>
-          </nav>
+      <button>Teste modal</button>
 
+      
 
-          <section class="cabecalho-menu">
-            <nav class="menu">
-              <a class="menu-item" href="index.html">Home</a>
-              <a class="menu-item" href="modelos.html">Modelos</a>
-              <a class="menu-item" href="contatos.html">Contato</a>
-              <!-- Adicionar mais itens de menu conforme necessário -->
-            </nav>
+      <dialog>
+        <h2>Apple Iphone 13</h2>
+        <p>Preço: R$3.951,57</p>
+        <p>Cor: Meia-noite</p>
+        <p>Sistema operacional: iOS 14</p>
+        <p>Tecnologia celular: 5G</p>
+        <p>Câmera: Câmeras duplas de 12 MP com modo retrato</p>
+        <p>Espaço de armazenamento: 128GB</p>
 
-<!--CSS
-.cabecalho-menu{
-background: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
-display: flex;
-flex-direction: row;
-justify-content:center;
-align-items: center;
-flex-wrap: wrap;
+        <section class="modelos">
+          <!--Apple-->
+          <section class="celulares">
+            <a class="link-celular" href="https://www.amazon.com.br/dp/B09T55NFSR/ref=fs_a_atv_5">
+              <img class="foto_celular" src="/fotos/Iphone13.jpg" alt="iphone13">
+              <h6>Apple iPhone 13 (128 GB)</h6>
+            </a>
+        <button>Fechar</button>
+      </dialog>
     
-}
 
-.menu{
-    display: flex;
-    margin-left: 50px;
-    gap: 500px;
-    
-}
-
-.menu-item{
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-family: 'Martian Mono', monospace;
-    font-weight:bold;
-    
-}
--->
-
-          </section>
     </main>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+      dialog::backdrop{
+        background-color: rgba(4, 4, 11, 0.494);
+      }
+
+      dialog{
+        background-color: rgb(136, 134, 134);
+        border: none;
+        border-radius: .5rem;
+        width: 30%;
+      }
+    </style>
+
+    <script>
+      const button = document.querySelector("button")
+      const modal = document.querySelector("dialog")
+      buttonClose = document.querySelector("dialog button")
+
+      button.onclick = function (){
+        modal.showModal()
+      }
+
+      buttonClose.onclick = function (){
+        modal.close()
+      }
+    </script>
+
 </body>
 </html>
