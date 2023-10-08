@@ -58,9 +58,10 @@
           <ul>
             <li class="itens-barra">
               <h6>Filtros</h6>
-              <span>Preço</span>
-              <span>Cor</span>
-              <span>Modelo</span>
+              <a>Preço</a>
+              <a>Cor</a>
+              <a>Modelo</a>
+              <a>Armazenamento</a>
             </li>
           </ul>
         </nav>
@@ -74,44 +75,63 @@
             <img class="foto_celular" src="fotos/Iphone13.jpg" alt="iphone13">
             <h6>Apple iPhone 13 (128 GB)</h6>
           </a>
-          <button id="infoButton" type="button" onclick="modal.showModal()">Info</button>
-          <dialog>
-            <h2><strong>Apple Iphone 13</strong> </h2>
-            <p>Preço: R$3.951,57</p>
-            <p>Cor: Meia-noite</p>
-            <p>Sistema operacional: iOS 14</p>
-            <p>Tecnologia celular: 5G</p>
-            <p>Câmera: Câmeras duplas de 12 MP com modo retrato</p>
-            <p>Espaço de armazenamento: 128GB</p>
-            <img src="fotos/Iphone13.jpg" alt="iphone13" width="200px">
-            <br><button id="closeButton" type="button" onclick="modal.close()">Fechar</button>
-          </dialog>
-          
+          <div>
+            <button id="infoButton" type="button" onclick="modal.showModal()" >Info</button>
+            <dialog id="modal">
+              <h2><strong>Apple Iphone 13</strong> </h2>
+              <p>Preço: R$3.951,57</p>
+              <p>Cor: Meia-noite</p>
+              <p>Sistema operacional: iOS 14</p>
+              <p>Tecnologia celular: 5G</p>
+              <p>Câmera: Câmeras duplas de 12 MP com modo retrato</p>
+              <p>Espaço de armazenamento: 128GB</p>
+              <img src="fotos/Iphone13.jpg" alt="iphone13" width="200px">
+              <br><button id="closeButton" type="button" onclick="modal.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
+        
         <section class="celulares">
           <a class="link-celular" href="https://www.amazon.com.br/dp/B00CLOZBHK/ref=fs_a_atv_4">
             <img class="foto_celular" src="fotos/Iphone14.jpg" alt="iphone14">
             <h6>Apple iPhone 14 (128 GB)</h6>
           </a>
-          <!--Arrumar-->
-          <button id="infoButton" type="button" onclick="modal.showModal()">Info</button>
-          <dialog>
-            <h2><strong>Apple Iphone 14</strong> </h2>
-            <p>Preço: R$4.599,00</p>
-            <p>Cor: Cinza-Escuro</p>
-            <p>Sistema operacional: iOS</p>
-            <p>Tecnologia celular: 5G</p>
-            <p>Câmera: Câmeras duplas de 12 MP (Ultra Wide e Wide)</p>
-            <p>Espaço de armazenamento: 128GB</p>
-            <img src="fotos/Iphone14.jpg" alt="iphone14" width="200px">
-            <br><button id="closeButton" type="button" onclick="modal.close()">Fechar</button>
-          </dialog>
+          <!--Arrumado-->
+          <div>
+            <button id="infoButton" type="button" onclick="modal2.showModal()">Info</button>
+            <dialog id="modal2">
+              <h2><strong>Apple Iphone 14</strong> </h2>
+              <p>Preço: R$4.599,00</p>
+              <p>Cor: Cinza-Escuro</p>
+              <p>Sistema operacional: iOS</p>
+              <p>Tecnologia celular: 5G</p>
+              <p>Câmera: Câmeras duplas de 12 MP (Ultra Wide e Wide)</p>
+              <p>Espaço de armazenamento: 128GB</p>
+              <img src="fotos/Iphone14.jpg" alt="iphone14" width="200px">
+              <br><button id="closeButton2" type="button" onclick="modal2.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
+
         <section class="celulares">
           <a class="link-celular" href="https://www.amazon.com.br/dp/B0CHXRDKQF/ref=fs_a_atv_3">
             <img class="foto_celular" src="fotos/Iphone15.jpg" alt="iphone15">
             <h6>Apple iPhone 15 (256 GB)</h6>
           </a>
+          <div>
+            <button id="infoButton" type="button" onclick="modal3.showModal()">Info</button>
+            <dialog id="modal3">
+              <h2><strong>Apple Iphone 15</strong> </h2>
+              <p>Preço: R$7.289,10</p>
+              <p>Cor: Preto</p>
+              <p>Sistema operacional: iOS 16</p>
+              <p>Tecnologia celular: 5G</p>
+              <p>Câmera: Câmera dupla de 48 MP (Ultra Wide e Principal)</p>
+              <p>Espaço de armazenamento: 256GB</p>
+              <img src="fotos/Iphone15.jpg" alt="iphone15" width="200px">
+              <br><button id="closeButton3" type="button" onclick="modal3.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
         <!--Samsung-->
         <section class="celulares">
@@ -119,18 +139,60 @@
             <img class="foto_celular" src="fotos/SamsungGalaxy_s21.jpg" alt="galaxys21">
             <h6>Samsung Galaxy S21 FE (128GB)</h6>
           </a>
+          <div>
+            <button id="infoButton" type="button" onclick="modal4.showModal()">Info</button>
+            <dialog id="modal4">
+              <h2><strong>Samsung Galaxy S21 FE</strong></h2>
+              <p>Preço: R$2.999,90</p>
+              <p>Cor: Branco</p>
+              <p>Sistema operacional: Android 11.0</p>
+              <p>Tecnologia celular: 5G</p>
+              <p>Câmera: Câmera Tripla Traseira de 12MP + 12MP + 8MP e Selfie de 32MP</p>
+              <p>Espaço de armazenamento: 128GB</p>
+              <img src="fotos/SamsungGalaxy_s21.jpg" alt="galaxys21" width="200px">
+              <br><button id="closeButton4" type="button" onclick="modal4.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
         <section class="celulares">
           <a class="link-celular" href="https://www.amazon.com.br/Samsung-Galaxy-C%C3%A2mera-Tripla-Selfie/dp/B0BFFXQWSQ/ref=asc_df_B0BFFXQWSQ/?tag=googleshopp00-20&linkCode=df0&hvadid=379721266747&hvpos=&hvnetw=g&hvrand=17948141941235559728&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-1820628232741&th=1">
             <img class="foto_celular" src="fotos/SamsungGalaxy_s22.jpg" alt="galaxys22">
             <h6>Samsung Galaxy S22 (128GB)</h6>
           </a>
+          <div>
+            <button id="infoButton" type="button" onclick="modal5.showModal()">Info</button>
+            <dialog id="modal5">
+              <h2><strong>Samsung Galaxy S22</strong></h2>
+              <p>Preço: R$3.875,99</p>
+              <p>Cor: Preto</p>
+              <p>Sistema operacional: Android 12.0</p>
+              <p>Tecnologia celular: 5G</p>
+              <p>Câmera: Câmera Tripla Traseira de 50MP OIS (Wide) + 10MP OIS (Telephoto) + 12MP (Ultra-Wide) de Selfie de 10MP</p>
+              <p>Espaço de armazenamento: 128GB</p>
+              <img src="fotos/SamsungGalaxy_s22.jpg" alt="galaxys22" width="200px">
+              <br><button id="closeButton5" type="button" onclick="modal5.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
         <section class="celulares">
           <a class="link-celular" href="https://www.amazon.com.br/Samsung-Galaxy-Processador-Qualcomm-Snapdragon/dp/B0BRT59Y1R/ref=sr_1_1?crid=1FPYIJ938P5G8&keywords=samsung&qid=1696706628&refinements=p_36%3A17270948011&rnid=16245552011&s=wireless&sprefix=sam%2Caps%2C379&sr=1-1&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&th=1">
             <img class="foto_celular" src="fotos/SamsungGalaxy_s23.jpg" alt="galaxys23">
             <h6>Samsung Galaxy S23 (128GB)</h6>
           </a>
+          <div>
+            <button id="infoButton" type="button" onclick="modal6.showModal()">Info</button>
+            <dialog id="modal6">
+              <h2><strong>Samsung Galaxy S23</strong></h2>
+              <p>Preço: R$4.649,00</p>
+              <p>Cor: Preto</p>
+              <p>Sistema operacional: Android 13.0</p>
+              <p>Tecnologia celular: 5G</p>
+              <p>Câmera: Câmera Tripla Traseira de 50MP +12MP + 10MP Selfie de 12MP</p>
+              <p>Espaço de armazenamento: 128GB</p>
+              <img src="fotos/SamsungGalaxy_s23.jpg" alt="galaxys23" width="200px">
+              <br><button id="closeButton6" type="button" onclick="modal6.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
         <!--Xiaomi-->
         <section class="celulares">
@@ -138,22 +200,61 @@
             <img class="foto_celular" src="fotos/Xiaomi_Redminote11.jpg" alt="redmi11">
             <h6>Xiaomi Redmi Note 11 (128 GB)</h6>
           </a>
+          <div>
+            <button id="infoButton" type="button" onclick="modal7.showModal()">Info</button>
+            <dialog id="modal7">
+              <h2><strong>Xiaomi Redmi Note 11</strong></h2>
+              <p>Preço: R$995,00</p>
+              <p>Cor: Cinza</p>
+              <p>Sistema operacional: Android</p>
+              <p>Tecnologia celular: 4G</p>
+              <p>Câmera: Câmera 16MP</p>
+              <p>Espaço de armazenamento: 128GB</p>
+              <img src="fotos/Xiaomi_Redminote11.jpg" alt="xiaomi11" width="200px">
+              <br><button id="closeButton7" type="button" onclick="modal7.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
         <section class="celulares">
           <a class="link-celular" href="https://www.amazon.com.br/Xiaomi-Mi-8gb-256gb-Global/dp/B09RZX92SN/ref=sr_1_7?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=29VP6D4EI6SBV&keywords=xiaomi+12&qid=1696708574&s=electronics&sprefix=xiaomi+1%2Celectronics%2C198&sr=1-7&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147">
             <img class="foto_celular" src="fotos/Xiaomi12.jpg" alt="xiaomi12">
             <h6>Xiaomi Mi 12 (256gb)</h6>
           </a>
+          <div>
+            <button id="infoButton" type="button" onclick="modal8.showModal()">Info</button>
+            <dialog id="modal8">
+              <h2><strong>Xiaomi Mi 12</strong></h2>
+              <p>Preço: R$2.799,00</p>
+              <p>Cor: Azul</p>
+              <p>Sistema operacional: Android</p>
+              <p>Tecnologia celular: 5G</p>
+              <p>Câmera: Câmera 16MP</p>
+              <p>Espaço de armazenamento: 256GB</p>
+              <img src="fotos/Xiaomi12.jpg" alt="xiaomi12" width="200px">
+              <br><button id="closeButton8" type="button" onclick="modal8.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
         <section class="celulares">
           <a class="link-celular" href="https://www.amazon.com.br/Xiaomi-256gb-Black-Brasil-Preto/dp/B0BXH3T5CS/ref=sr_1_4?crid=1YBFI8EJD9G6M&keywords=xiaomi+13&qid=1696708456&s=electronics&sprefix=xiaomi%2Celectronics%2C195&sr=1-4&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147">
             <img class="foto_celular" src="fotos/Xiaomi13.jpg" alt="xiaomi13">
             <h6>Xiaomi Mi 13 (256gb)</h6>
           </a>
+          <div>
+            <button id="infoButton" type="button" onclick="modal9.showModal()">Info</button>
+            <dialog id="modal9">
+              <h2><strong>Xiaomi Mi 13</strong></h2>
+              <p>Preço: R$4.589,00</p>
+              <p>Cor: Preto</p>
+              <p>Sistema operacional: Android 7.0</p>
+              <p>Tecnologia celular: 5G</p>
+              <p>Câmera: Câmera 50MP</p>
+              <p>Espaço de armazenamento: 256GB</p>
+              <img src="fotos/Xiaomi13.jpg" alt="xiaomi13" width="200px">
+              <br><button id="closeButton9" type="button" onclick="modal9.close()">Fechar</button>
+            </dialog>
+          </div>
         </section>
-
-    
-        
 
       </section>
 
