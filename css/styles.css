@@ -257,6 +257,48 @@ dialog{
 
 /*COMEÇO DA PAGINA DE CONTATOS*/
 
+label{
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem_contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#enviar{
+    display: flex;
+    align-self: flex-end;
+    padding: 10px;
+    background-color: rgb(42, 42, 151);
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size:xx-small;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.card{
+    display: flex;
+    background-color: #0d1e7466;
+    color: rgb(253, 253, 255);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    padding: 2%;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
 /*FIM DA PAGINA DE CONTATOS*/
 
 
