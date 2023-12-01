@@ -1,6 +1,9 @@
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nova+Square&display=swap');
+
+
 
 /*Comandos para "resetar" o estilo d apagina*/
 *{ 
@@ -12,10 +15,25 @@
 
 /*Comandos para estilizar a página*/
 
-body {
-    background-image: linear-gradient(to top, #0d1f74, #320e4d, #11082f, #200515, #000000);
+body{
+    background-image: linear-gradient(to left top, #dedede, #d9dadb, #d3d7d7, #cfd3d1, #cecfca);
+  
 }
 
+header {
+    background-image: linear-gradient(to left top, #ebd445, #d6b31f, #c69b1b, #b38418, #a06e15, #9d640f, #9a5a0a, #975006, #a54c01, #b44600, #c43e04, #d4300e);
+}
+
+.cabecalho-imagem{
+    border-radius: 50%;
+    
+}
+
+#nome-empresa{
+    color: rgb(255, 255, 255);
+    font-family: 'Acme', sans-serif;
+    font-size: bold;
+}
 
 .cabecalho{
     border-bottom: 0.2px solid white;
@@ -36,6 +54,7 @@ body {
     background-color: linear-gradient(55.87deg, #1b1b1b 16.8%, #686870 95%);
     
 }
+
 
 .navbar-brand{
     color: rgb(253, 253, 255);
@@ -82,7 +101,7 @@ body {
 
 .texto-banner{
 
-    color: rgb(253, 253, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Martian Mono', monospace;
     font-size: small;
 }
@@ -106,14 +125,14 @@ body {
 }
 
 .link-logo a{
-    color: rgb(253, 253, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Martian Mono', monospace;
     font-size: small;
 }
 
 #logo_apple, #logo_samsung, #logo_xiaomi{
     width: 100px;
-    background-color: #e6e5ed86;
+    background-color: #a8a8ac;
     padding:10px;
     border-radius: 20%;
 }
@@ -154,7 +173,7 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
     padding: 5%;
     display: flex;
     justify-content: center;
-    color: rgb(253, 253, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Martian Mono', monospace;
     font-size: small;
 }
@@ -184,7 +203,7 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
 }
 
 .celulares{
-    background-color: #320e4d;
+    background-color: #b9b9b9;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -220,7 +239,7 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
 .barra-lateral{
     margin-left: 20px;
     display: flex;
-    color: rgb(253, 253, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Martian Mono', monospace;
     font-size: small;
 
@@ -237,12 +256,11 @@ li:hover::after, .cabecalho-menu-cliente:hover::after, .navbar-brand:hover::afte
 
 
 dialog{
-    color: rgb(253, 253, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Martian Mono', monospace;
     font-size: small;
     padding: 20px;
-    background-image: radial-gradient(circle, #759596, #5f7880, #4d5d67, #3d424d, #2b2a32);    width: 30%;
-    border-radius: 15px;
+    background-image: radial-gradient(circle, #b1b1b1, #b5b5b5, #bababa, #bebebe, #c3c3c3, #c9c9ca, #cfcfd0, #d4d5d7, #dbdfe2, #e1e9ec, #e7f3f5, #eefdfc);    border-radius: 15px;
     border: none;
     text-align:justify;
     position: fixed;
@@ -258,7 +276,7 @@ dialog{
 /*COMEÇO DA PAGINA DE CONTATOS*/
 
 label{
-    color: rgb(253, 253, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Martian Mono', monospace;
     font-size: small;
 }
@@ -279,7 +297,7 @@ label{
     display: flex;
     align-self: flex-end;
     padding: 10px;
-    background-color: rgb(42, 42, 151);
+    background-color: #0079FB;
     color: rgb(253, 253, 255);
     font-family: 'Martian Mono', monospace;
     font-size:xx-small;
@@ -290,7 +308,7 @@ label{
 
 .card{
     display: flex;
-    background-color: #0d1e7466;
+    background-color: #5f606066;
     color: rgb(253, 253, 255);
     font-family: 'Martian Mono', monospace;
     font-size: small;
@@ -305,3 +323,65 @@ label{
 /*COMEÇO DA PAGINA DE CADASTROS*/
 
 /*FIM DA PAGINA DE CADASTROS*/
+
+
+/*COMEÇO DA PAGINA DE CARRINHO*/
+
+.titulo-carrinho{
+    color: rgb(0, 0, 0);
+    font-family: 'Martian Mono', monospace;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.produtos {
+    color: rgb(0, 0, 0);
+    font-family: 'Martian Mono', monospace;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .quantidade {
+    width: 50px;
+  }
+  
+  .total {
+    color: rgb(0, 0, 0);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .pagamento {
+    color: rgb(0, 0, 0);
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .botao{
+    padding: 5px;
+    text-align: center;
+  }
+
+  .btn-pagar{
+    background-color: rgb(28, 163, 84);
+    border-radius: 20%;
+    padding: 5px;
+   
+  }
+
+
+
+/*FIM DA PAGINA DE CARRINHO*/
