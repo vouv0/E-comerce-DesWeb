@@ -1,11 +1,32 @@
+<?php
+
+if (isset($_POST['submit']))
+{
+  //print_r($_POST['inputNome']);
+  //print_r($_POST['inputSobrenome']);
+  //print_r($_POST['inputEmail'])
+
+  include_once('conexaobd.php');
+
+  $nome = $_POST['inputNome'];
+  $sobrenome = $_POST['inputSobrenome'];
+  $email = $_POST['inputEmail'];
+  $mensagem = $_POST['suaMensagem'];
+
+  $result = mysqli_query($conexao, "INSERT INTO contatos(nome,sobrenome,email,mensagem)VALUES('$nome','$sobrenome','$email','$mensagem'");
+}
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📱 Contatos</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>📱 Carrinho</title>
+
 </head>
 <body>
   <header class="cabecalho">
@@ -49,90 +70,56 @@
     
   </header>
 
-
-    <main>
-        <h1 class="titulo-carrinho">Carrinho de Compras</h1>
-
-        <div class="produtos">
-          <div class="produto">
-            <h3>Item 1</h3>
-            <h6>Modelos</h6>
-            <select id="escolhaModelos">
-                <option value="iphone13">Iphone 13</option>
-                <option value="iphone14">Iphone 14</option>
-                <option value="iphone15">Iphone 15</option>
-                <option value="galaxys21">Galaxy S21</option>
-                <option value="galaxys22">Galaxy S22</option>
-                <option value="galaxys23">Galaxy S23</option>
-                <option value="xiaomi11">Xiaomi Mi11</option>
-                <option value="xiaomi12">Xiaomi Mi12</option>
-                <option value="xiaomi13">Xiaomi Mi13</option>
-            </select>
+    <main class="contato">
+      <section class="container my-4">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputNome">Nome</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputSobrenome">Sobrenome</label>
+              <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email"><br>
+          </div>
+          <div class="mensagem_contato">
+            <label>Sua Mensagem:</label>
+            <textarea name="suaMensagem" id="suaMensagem" cols="50" rows="5"></textarea>
+            <form action="mailto:e_commercefmu@gmail.com" method="post" enctype="text/plain"></form>
+            <input nome="submit"  id="enviar" type="submit">
+            <!--card-->
+            <div class="card"  style="width: 20rem;">
+              <div class="card-body"> 
+                <h5 class="card-title" id="card1">Entre em contato</h5>
+                <p class="card-text">Email: pontoquentefmu@gmail.com</p>
+                <p class="card-text">Tel: (11) 9xxxx-xxxx</p>
+              </div>
+            </div>
+          </div>
             
-            <p id="preco1"> <span class="preco"></span></p>
-            <label for="quantidadeItem1">Quantidade:</label>
-            <input type="number" id="quantidadeItem1" class="quantidade" value="0">
-          </div>
-          <div class="produto">
-            <h3>Item 2</h3>
-            <h6>Modelos</h6>
-            <select id="escolhaModelos">
-                <option value="iphone13">Iphone 13</option>
-                <option value="iphone14">Iphone 14</option>
-                <option value="iphone15">Iphone 15</option>
-                <option value="galaxys21">Galaxy S21</option>
-                <option value="galaxys22">Galaxy S22</option>
-                <option value="galaxys23">Galaxy S23</option>
-                <option value="xiaomi11">Xiaomi Mi11</option>
-                <option value="xiaomi12">Xiaomi Mi12</option>
-                <option value="xiaomi13">Xiaomi Mi13</option>
-            </select>
-            
-            <p id="preco2"> <span class="preco"></span></p>
-            <label for="quantidadeItem2">Quantidade:</label>
-            <input type="number" id="quantidadeItem2" class="quantidade" value="0">
-          </div>
-        </div>
-      
-        <div class="total">
-          <h3>Total:</h3>
-          <p id="totalPreco"></p>
-        </div>
-      
-        <div class="pagamento">
-          <h3>Forma de Pagamento:</h3>
-          <select id="formaPagamento">
-            <option value="credito">Cartão de Crédito</option>
-            <option value="debito">Cartão de Débito</option>
-            <option value="boleto">Boleto</option>
-            <option value="pix">PIX</option>
-          </select>
-          <div class="botao">
-            <button class="btn-pagar">Pagar</button>
-          </div>
-        </div>
+      </section>
 
-        
-
+      
+      <!--Quero por o card do lado direito-->
+      
+    
     </main>
-
-
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Página criada por:</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Página web criada por:</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
             <div class="modal-body">
-            Beatriz Romão Neves<br>
-            Lucas Beni<br>
-            Pedro Carvalho<br>
-            Vinicius Viana Brito<br>
-            Vitor Vouvouloudas de Moraes<br>
+            Beatriz<br>Lucas<br>Pedro<br>Vinicius<br>Vitor Vouvouloudas de Moraes<br>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -141,18 +128,15 @@
         </div>
         </div>
       </div>
-      
+
 
     <footer class="rodape">
-      <p>© 2023 Ponto Quente LTDA</p>
+        <p>© 2023 Ponto Quente LTDA</p>
     </footer>
-      
-    <script src="carrinho.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    
 </body>
 </html>
